@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="style.css"/>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li style="width: 5%;">
+                        <img src="Gambar/logo.png" alt="foto logo" style="width:100%;"/>
+                    </li>
+                    <li>
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+    </head>
+
+    <body>
+        <form action="">
+            <div>
+                <label for="name">Name</label>
+                <input id="name"type="text" required/>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input id="email"type="email" required/>
+            </div>
+            <div>
+                <label for="number">Number</label>
+                <input id="number" type="number" required/>
+            </div>
+
+            <div>
+                <select>
+                    <option value="" hidden>Select</option>
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>Fullstack</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea name="" id="message" cols="30" rows="5"></textarea>
+            </div>
+            
+            <div>
+                <button>Submit</button>
+            </div>
+
+        </form>
+    </body>
+</html>
