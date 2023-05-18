@@ -61,6 +61,7 @@ nav a {
     border:1px solid;
 }
 
+
 section{
     display: flex;
     width: 100%;
@@ -70,8 +71,39 @@ section{
     display:flex;
     flex :50%;
     flex-direction: column;
+}
+
+.left-horizontal{
+    display:flex;
+    flex-direction: row;
+    margin: 5px auto;
+}
+
+.left-horizontal button{
+    flex:50%;
+    width:50%;
+    border-radius: 15px; 
+    padding: 3px 10px 3px 10px ; 
+    color: #cacaca;
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
 
 }
+
+.left-horizontal img:hover{
+    cursor: pointer;
+}
+
+.left-horizontal button:hover{
+    background-color:white;
+    color:rgb(35, 144, 233);
+    border:1px solid;
+}
+
+.left img:hover{
+    cursor:pointer;
+}
+
 .right{
     display:flex;
     flex : 50%;
