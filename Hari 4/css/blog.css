@@ -1,0 +1,220 @@
+.blog * {
+    margin: 0;
+    padding: 0;
+}
+
+.blog-form{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-form .form-container {
+    width: 500px;
+}
+
+.blog-form .form-container h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-form .form-container form label{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-form form input,textarea{
+    width:100%;
+    font-size: 20px ;
+    font-weight: 400px;
+    padding :8px;
+    margin-top:5px;
+    margin-bottom: 20px;
+    background: #f4f4f4;
+    border: 1px solid #c4c4c4;
+    border-radius:8px;
+    resize: none;
+    cursor: text;
+}
+
+.blog-form form textarea{
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+
+.blog-form form img{
+    width:5%;
+}
+
+.input-blog-image-grup {
+    width:96%;
+    font-size:20px;
+    font-weight:400;
+    padding: 8px;
+    margin-top:5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+}
+
+.input-blog-image-grup label{
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.blog-form .form-container .button-grup{
+    text-align: right;
+}
+.blog-form form button {
+    text-align: right;
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size:17px;
+    background:rgb(35, 144, 233);
+    border-radius:8px;
+    border:none;
+    color:#fff;
+    cursor: pointer;
+
+}
+
+.blog-form form button:hover{
+    background-color: white;
+    color: rgb(35, 144, 233);
+}
+
+.blog .line{
+    border:3px solid rgb(35, 144, 233);
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 8px;
+    
+
+}
+
+.blog-list{
+    margin-top: 80px;
+    margin-bottom:80px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.blog-list-item{
+    width:80%;
+    padding:15px;
+    margin-bottom: 20px;
+    border : 2px solid rgb(35, 144, 233);
+    border-radius:8px;
+    display:flex;
+}
+
+
+.blog-list .blog-list-item .blog-list-item-image img{
+    flex:1;
+    width: 100%;
+}
+
+.blog-list-item-button{
+    text-align: right;
+}
+
+.input-blog-date{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-blog-date-flex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.blog-checkbox{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Checkbox */
+
+.blog-checkbox{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.checkbox-left{
+    margin-right: 20px;
+}
+.checkbox-right{
+    margin-left: 20px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
