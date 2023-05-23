@@ -29,7 +29,7 @@
         <div class="blog">
             <div class="blog-form">
                 <div class="form-container">
-                    <form action="">
+                    <form onsubmit="addblog(event)">
                         <h1>Create a Project
                         </h1>
                         <div>
@@ -54,24 +54,24 @@
                         <div class="blog-checkbox">
                             <div class="checkbox-left">
                                 <label class="container">IoT
-                                    <input type="checkbox">
+                                    <input type="checkbox" id="iot"/>
                                     <span class="checkmark"></span>
                                 </label>
 
                                 <label class="container">Data Science
-                                    <input type="checkbox">
+                                    <input type="checkbox" id="datascience"/>
                                     <span class="checkmark"></span>
                                 </label>
 
                             </div>
                             <div class="checkbox-right">
                                 <label class="container">Full Stack Dev
-                                    <input type="checkbox">
+                                    <input type="checkbox" id="fullstack"/>
                                     <span class="checkmark"></span>
                                 </label>
 
                                 <label class="container">Content Creator
-                                    <input type="checkbox">
+                                    <input type="checkbox" id="contentcreator"/>
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
@@ -96,26 +96,29 @@
             
             <hr class="line"/>
             
-            <div class="blog-list">
+            <div id="contents" class="blog-list">
                 <div class="blog-list-item">
                     <div class="blog-list-item-image">
                         <img src="assets/Gambar/conten1.png" alt="Foto Bahasan"/>
                     </div>
-                    <div class="blog-list-item-button">
-                        <button>Edit Project</button>
-                        <button>Delete Project</button>
-                    </div>
-                    <div>
+                    <div class="blog-list-item-content">
+                        <div class="blog-list-item-content-button">
+                            <button class="btn-edit">Edit Project</button>
+                            <button class="btn-delete">Delete Project</button>
+                        </div>
+
                         <h1>
-                            <a href="blog-detail.html" target="blank">
+                            <a href="blogDetail.html" target="blank">
                                 Duino-Coin, Sebagai pembelajaran "Mining"
                             </a>
                         </h1>
-                        <div>12 Jul 2023 22:30WIB | diza febriyan</div>
+                        <div class="blog-list-item-content-detail">12 Jul 2023 22:30WIB | diza febriyan</div>
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio inventore doloremque magni quas eveniet voluptatem obcaecati fugiat, ad exercitationem facilis, voluptate, nam est laudantium soluta labore error tempora. Rerum, veritatis!
                         </p>
+
                     </div>
+
                 </div>
             </div>
 
