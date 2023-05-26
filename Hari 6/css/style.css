@@ -222,12 +222,57 @@ textarea{
 
 
 @media only screen and (max-width: 900px) {
+
+    .contact-form-grup {
+        width:250px;
+        margin:auto;
+        padding:10px;
+        margin-bottom: 50px;
+    }
+    
+    .contact-form-grup form div{
+        margin-top:15px
+    }
+    
+    .contact-form-grup label{
+        font-weight: bold;
+        font-size:15px;
+    }
+    
+    .contact-form-grup input,
+    .contact-form-grup select,
+    .contact-form-button,
+    .contact-form-grup textarea{
+        background-color: #cacaca;
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #cacaca;
+        resize: none;
+        cursor: pointer;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .form-container form {
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        margin:auto;
+        padding:auto;
+        font-size: 15px;
+    }
+
     #barsmenu{
         display:block;
     }
+
     .item-collapse{
         display: none;
     }
+
     .nav-left .logo{
         width: 20%;
     }
@@ -250,6 +295,7 @@ textarea{
     .right div{
         width: 100%;
     }
+    
     .right img {
         width: 100%;
     }

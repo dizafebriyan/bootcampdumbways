@@ -10,21 +10,32 @@
         <nav>
             <div class="nav-left">
                 <ul>
-                    <li style="width: 5%;">
+                    <li class="logo">
                         <img src="assets/Gambar/logo.png" alt="foto logo" style="width:100%;"/>
                     </li>
-                    <li>
-                        <a class="active" href="index.html">Home</a>
+                    <li class="item-collapse">
+                        <a href="index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="myProject.html">My Project</a>
+                    <li class="item-collapse">
+                        <a class="active" href="myProject.html">My Project</a>
                     </li>
                 </ul>
             </div>
-            <div class="nav-right">
+            <div class="nav-right item-collapse">
                 <a href="contact.html">Contact Me</a>
             </div>
+            <div class="nav-right" id="barsmenu">
+                <button onclick="openHamburger()"  style="background-color:transparent; border:none; cursor: pointer;">
+                    <i class="fa-2x fa-solid fa-bars"></i>
+                </button>
+            </div>
         </nav>
+
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+            <a href="index.html">Home</a>
+            <a href="myProject.html"  class="hamburger-active">My Project</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
         <div class="blog">
             <div class="blog-form">
@@ -123,6 +134,8 @@
             </div>
 
         </div>
+        <script src="https://kit.fontawesome.com/ecea77ed94.js" crossorigin="anonymous"></script>
         <script src="js/blog.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
