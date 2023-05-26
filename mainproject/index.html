@@ -9,30 +9,37 @@
     <nav>
         <div class="nav-left">
             <ul>
-                <li style="width: 5%;">
+                <li class="logo">
                     <img src="assets/Gambar/logo.png" alt="foto logo" style="width:100%;"/>
                 </li>
-                <li>
+                <li class="item-collapse">
                     <a class="active" href="index.html">Home</a>
                 </li>
-                <li>
+                <li class="item-collapse">
                     <a href="myProject.html">My Project</a>
                 </li>
             </ul>
         </div>
-        <div class="nav-right">
+        <div class="nav-right item-collapse">
             <a href="contact.html">Contact Me</a>
         </div>
+        <div class="nav-right" id="barsmenu">
+            <button onclick="openHamburger()"  style="background-color:transparent; border:none; cursor: pointer;">
+                <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+        </div>
     </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html" class="hamburger-active">Home</a>
+        <a href="myProject.html">My Project</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
 </head>
 
 <body >
-    <div style="width: 1000px; 
-    margin: 70px auto;
-    box-shadow: 0 5px 10px 1px #cacaca;
-    padding: 70px;
-    background-color: white;
-    border-radius: 10px;">
+    <div class="card">
         <section>
             <div class="left">
                 <h1>Hi Welcome to My Profile</h1>
@@ -61,15 +68,11 @@
 
             <div class="right">
                     <center>        
-                        <img style="width: 50%; 
-                        border-radius: 10px 10px 0 0;" src="assets/Gambar/imagee.jpg" alt="Gambar Diza Febriyan;">
+                        <img src="assets/Gambar/imagee.jpg" alt="Gambar Diza Febriyan;">
                     </center>
             
             
-                    <div style="width:50%;margin:auto;
-                    box-shadow: 0 10px 10px #cecece ;
-                    border-radius: 0 0 10px 10px;
-                    padding: 1px; margin-top: 0;">
+                    <div>
                         <h2 style="text-align: center; margin-bottom: 2px;">Diza Febriyan</h2>
                         <p style="text-align: center; margin-top: 0; ">Fullstack Developer</p>
                 </div>
@@ -79,5 +82,7 @@
 
 
     </div>
+    <script src="https://kit.fontawesome.com/ecea77ed94.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

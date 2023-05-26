@@ -21,7 +21,7 @@
 
 let dataproject=[];
 
-function addblog(event){
+function addblog(event){  
 event.preventDefault();
 
 let title = document.getElementById("input-blog-title").value;
