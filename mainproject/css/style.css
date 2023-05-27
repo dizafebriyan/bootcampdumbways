@@ -255,13 +255,29 @@ textarea{
     }
 
     .form-container form {
-        width: 100%;
+        width: 80%;
         text-align: center;
         align-content: center;
         justify-content: center;
         margin:auto;
         padding:auto;
         font-size: 15px;
+    }
+
+    .input-blog-date{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .input-blog-date-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-container form div input,textarea{
+        margin:10px auto;
     }
 
     #barsmenu{
