@@ -109,6 +109,8 @@ function allTestimonials(){
 
 };
 
+allTestimonials();
+
 
 function filterTestimonial (ratting){
     let testimonialHTML='';
