@@ -2,7 +2,7 @@ const promise = new Promise ((resolve,reject)=>{
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open("GET","https://api.npoint.io/8992e3472bd51ca7d5b5",true);
+    xhr.open("GET","https://api.npoint.io/1d3ad056ed00da7f1724",true);
         // parameter 1 : method
     // parameter 2 : is the URL
     // parameter 3 : true or false, if tru mean that we using asynchronous web assembly, if false mean that we using synchronous way.
