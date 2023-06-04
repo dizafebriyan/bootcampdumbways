@@ -1,10 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Testimoni</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/testimonial.css">
-    </head>
-    <body>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="css/style.css"/>
         <nav>
             <div class="nav-left">
                 <ul>
@@ -35,33 +33,51 @@
         <div class="hamburger-nav-container" id="hamburger-nav-container">
             <a href="index.html">Home</a>
             <a href="myProject.html">My Project</a>
-            <a href="contact.html">Contact</a>
-            <a href="testimonial.html" class="hamburger-active">Testimonial</a>
+            <a href="contact.html" class="hamburger-active">Contact</a>
+            <a href="testimonial.html">Testimonial</a>
         </div>
+    
+    </head>
 
-        <div class="container">
-            <h1>My Testimonial</h1>
-            <h2>Sort By Ratting</h2>
-            <div class="ratting-container">
-                <button class="button-ratting" onclick="getAllTestimonials()" >ALL</button>
-                <button class="button-ratting" onclick="getFilteredTestimonials(1)">1 <i class="fa-solid fa-star"></i></button>
-                <button class="button-ratting" onclick="getFilteredTestimonials(2)">2 <i class="fa-solid fa-star"></i></button>
-                <button class="button-ratting" onclick="getFilteredTestimonials(3)">3 <i class="fa-solid fa-star"></i></button>
-                <button class="button-ratting" onclick="getFilteredTestimonials(4)">4 <i class="fa-solid fa-star"></i></button>
-                <button class="button-ratting" onclick="getFilteredTestimonials(5)">5 <i class="fa-solid fa-star"></i></button>
+    <body>
+        <form class="contact-form-grup">
+            <div>
+                <label for="name">Name</label>
+                <input id="name"type="text" required/>
             </div>
-            <section class="testimonials" id="testimonials">
 
-            </section>
-        </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email"type="email" required/>
+            </div>
+            <div>
+                <label for="number">Number</label>
+                <input id="number" type="number" required/>
+            </div>
 
+            <div>
+                <label for="subject">Subject</label>
+                <select id="subject">
+                    <option value="" hidden>Select</option>
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>Fullstack</option>
+                </select>
+            </div>
 
+            <div>
+                <label for="message">Message</label>
+                <textarea name="" id="message" cols="30" rows="5"></textarea>
+            </div>
+            
+            <div>
+                <button class="contact-form-button" type="button" onclick="submitData()">Submit</button>
+            </div>
 
+        </form>
 
-
-        <script src="js/exercise/3-ajax.js"></script>
+        <script src="js/contact.js"></script>
         <script src="https://kit.fontawesome.com/ecea77ed94.js" crossorigin="anonymous"></script>
         <script src="js/index.js"></script>
-
     </body>
 </html>
