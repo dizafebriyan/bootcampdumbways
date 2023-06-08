@@ -24,15 +24,15 @@ let dataproject=[];
 function addblog(event){  
 event.preventDefault();
 
-let title = document.getElementById("inputTitle").value;
+let title = document.getElementById("input-blog-title").value;
 let startdate = document.getElementById("input-blog-date-start").value;
 let enddate = document.getElementById("input-blog-date-end").value;
-let content = document.getElementById("inputContent").value;
-let data1 = Number(document.getElementById("inputcheckbox_iot").checked);
-let data2 = Number(document.getElementById("inputcheckbox_ui").checked);
-let data3 = Number(document.getElementById("inputcheckbox_full").checked);
-let data4 = Number(document.getElementById("inputcheckbox_ml").checked);
-let image = document.getElementById("inputImage").files;
+let content = document.getElementById("input-blog-content").value;
+let data1 = Number(document.getElementById("iot").checked);
+let data2 = Number(document.getElementById("datascience").checked);
+let data3 = Number(document.getElementById("fullstack").checked);
+let data4 = Number(document.getElementById("contentcreator").checked);
+let image = document.getElementById("input-blog-image").files;
 let posttime=new Date();
 image=URL.createObjectURL(image[0]);
 start = new Date(startdate);

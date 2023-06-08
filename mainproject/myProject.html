@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/blog.css">
+        <title>Welcome to my Project</title>
+    </head>
+
+
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li class="logo">
+                        <img src="assets/Gambar/logo.png" alt="foto logo" style="width:100%;"/>
+                    </li>
+                    <li class="item-collapse">
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a href="myProject.html">Project</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a href="testimonial.html">Testimonial</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right item-collapse">
+                <a href="contact.html">Contact Me</a>
+            </div>
+            <div class="nav-right" id="barsmenu">
+                <button onclick="openHamburger()"  style="background-color:transparent; border:none; cursor: pointer;">
+                    <i class="fa-2x fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+            <a href="index.html">Home</a>
+            <a href="myProject.html"class="hamburger-active">My Project</a>
+            <a href="contact.html">Contact</a>
+            <a href="testimonial.html">Testimonial</a>
+        </div>
+
+        <div class="blog">
+            <div class="blog-form">
+                <div class="form-container">
+                    <form onsubmit="addblog(event)">
+                        <h1>Create a Project
+                        </h1>
+                        <div>
+                            <label for="input-blog-title"><h3>Project Name</h3></label>
+                            <input id="input-blog-title"type="text"/>
+                        </div>
+                        <div class="input-blog-date">
+                            <div class="input-blog-date-flex">
+                                <label for="input-blog-date-start"><h3>Start Date</h3></label>
+                                <input id="input-blog-date-start" type="date"/>
+                            </div>
+                            <div class="input-blog-date-flex">
+                                <label for="input-blog-date-end"><h3>End Date</h3></label>
+                                <input id="input-blog-date-end" type="date"/>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="input-blog-content"><h3>Description</h3></label>
+                            <textarea name="" id="input-blog-content" cols="30" rows="10"></textarea>
+                        </div>
+                        <label for="blog-checkbox"><h3>Technologies</h3></label>
+                        <div class="blog-checkbox">
+                            <div class="checkbox-left">
+                                <label class="container">IoT
+                                    <input type="checkbox" id="iot"/>
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="container">Data Science
+                                    <input type="checkbox" id="datascience"/>
+                                    <span class="checkmark"></span>
+                                </label>
+
+                            </div>
+                            <div class="checkbox-right">
+                                <label class="container">Full Stack Dev
+                                    <input type="checkbox" id="fullstack"/>
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="container">Content Creator
+                                    <input type="checkbox" id="contentcreator"/>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for=""><h3>Upload Image</h3></label>
+                            <div class="input-blog-image-grup">
+                                <label for="input-blog-image">
+                                    <p>attach files</p>
+                                    <img src="assets/Gambar/clip.png" alt="">
+                                </label>
+                                <input type="file" id="input-blog-image" hidden>
+                            </div>
+                        </div>
+                        <div class="button-grup">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="line"/>
+            
+            <h1 style="text-align: center; margin: 50px 0 0 0; justify-content: center;">MY PROJECT</h1>
+
+            <div id="contents" class="blog-list">
+                <!-- <div class="blog-list-item">
+                    <div class="blog-list-item-image">
+                        <img src="assets/Gambar/conten1.png" alt="Foto Bahasan"/>
+                    </div>
+                    <div class="blog-list-item-content">
+                        <div class="blog-list-item-content-button">
+                            <button class="btn-edit">Edit Project</button>
+                            <button class="btn-delete">Delete Project</button>
+                        </div>
+
+                        <h1>
+                            <a href="myProjectDetail.html" target="blank">
+                                Duino-Coin, Sebagai pembelajaran "Mining"
+                            </a>
+                        </h1>
+                        <div class="blog-list-item-content-detail">12 Jul 2023 22:30WIB | diza febriyan</div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio inventore doloremque magni quas eveniet voluptatem obcaecati fugiat, ad exercitationem facilis, voluptate, nam est laudantium soluta labore error tempora. Rerum, veritatis!
+                        </p>
+
+                    </div>
+
+                </div> -->
+            </div>
+
+        </div>
+        <script src="https://kit.fontawesome.com/ecea77ed94.js" crossorigin="anonymous"></script>
+        <script src="js/blog.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
