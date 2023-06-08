@@ -115,7 +115,7 @@ allTestimonials();
 function filterTestimonial (ratting){
     let testimonialHTML='';
 
-    const testimonialfilter = datatestimonial.filter(function(item){
+    const testimonialfilter = datatestimonial.filter(function(item){  //penulisan yang susah di fahami sama logika
         return item.ratting == ratting;
     }); 
 
