@@ -1,324 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
-    text-decoration:none;
     font-family:"roboto";
 }
 
-body{
-    margin:0;
-    padding:0;
-    background-color: #d9e1e9;
+.text-blue{
+    color: rgb(35, 144, 233) !important;
 }
 
-nav{
-    background-color:#a6c7e7;
-    display:flex;
-    align-items:center;
-    height: 10vh;
+.bg-blue{
+    background-color: #a6c7e7 !important;
+}
+.bg-basic{
+    background-color :#d9e1e9 !important;
+}
+.bt-bg-blue{
+    background-color: rgb(35, 144, 233) !important;
 }
 
-nav div ul{
-    display:flex;
-    list-style-type: none;
-    align-items: center;
+.bt-bg-blue:hover{
+    background-color: white !important;
+    color: rgb(35, 144, 233) !important;
+    border-color: rgb(35, 144, 233) !important ;
 }
 
-nav ul li{
-    margin-right:25px;
-    font-size: 20px;
-    color: black;
+/* nav{
+    height:8vh;
+} */
+
+.container-fluid{
+    height: 92vh;
 }
 
-nav a {
-    color: black;
+.container-form{
+    width: 80%;
+    max-width: 500px;
 }
 
-
-.nav-left{
-    flex: 50%;
-}
-.nav-left a:hover{
-    color: rgb(35, 144, 233);
-}
-
-.nav-right{
-    flex:50%;
-    text-align: end;
-    margin-right:45px;
-}
-
-.nav-right a{
-    background-color:rgb(35, 144, 233);
-    padding:8px 20px;
-    color:white;
-    border-radius: 10px;
-}
-
-.nav-right a:hover{
-    background-color:white;
-    color:rgb(35, 144, 233);
-    border:1px solid;
-}
-
-
-section{
-    display: flex;
-    width: 100%;
-    text-align: center;
-}
-.left{
-    display:flex;
-    flex :50%;
-    flex-direction: column;
-}
-
-.left-horizontal{
-    display:flex;
-    flex-direction: row;
-    margin: 5px auto;
-}
-
-.left-horizontal a{
-    flex: 50%;
-    width: 100%;
-}
-
-.left-horizontal button{
-    flex: 100%;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px; 
-    padding: 3px 10px 3px 10px ; 
-    color: #cacaca;
-    background-color: rgb(39, 39, 39);
+.pointer {
     cursor: pointer;
-
-}
-
-.left-horizontal img:hover{
-    cursor: pointer;
-}
-
-.left-horizontal button:hover{
-    background-color:white;
-    color:rgb(35, 144, 233);
-    border:1px solid;
-}
-
-.left img:hover{
-    cursor:pointer;
-}
-
-.left h6 {
-    text-align: center;
-}
-
-.left h6 a img {
-    width:5%; 
-    margin: 7px;
-}
-
-.right{
-    display:flex;
-    flex : 50%;
-    flex-direction: column;
-}
-
-.right img{
-    width: 50%; 
-    border-radius: 10px 10px 0 0;
-}
-
-
-.right div {
-    width:50%;margin:auto;
-    box-shadow: 0 10px 10px #cecece ;
-    border-radius: 0 0 10px 10px;
-    padding: 1px; margin-top: 0;
-}
-
-*{
-    text-decoration:none;
-    font-family:"roboto";
-}
-
-.contact-form-grup {
-    width:550px;
-    margin:50px auto;
-    padding:10px;
-}
-
-.contact-form-grup div{
-    margin-top:15px
-}
-
-.contact-form-grup label{
-    font-weight: bold;
-    font-size:20px;
-}
-
-input,
-select,.contact-form-button,
-textarea{
-    background-color: #ffffff;
-    border-radius: 10px;
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ffffff;
-    resize: none;
-    cursor: pointer;
-}
-
-#barsmenu{
-    display:none;
-}
-
-.hamburger-nav-container{
-    font-size: 23px;
-    list-style-type: none;
-    display:none;
-
-}
-
-.hamburger-nav-container a{
-    text-decoration: none;
-    color: white;
-    background-color: grey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border: 1px solid white;
-}
-
-.hamburger-nav-container .hamburger-active{
-    text-decoration: none;
-    color: white;
-    background-color: rgb(35, 144, 233);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border: 1px solid white;
-}
-
-.logo{
-    width: 5%;
-}
-.card{
-    width: 1000px; 
-    margin: 70px auto;
-    box-shadow: 0 5px 10px 1px #cacaca;
-    padding: 70px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-@media only screen and (max-width: 900px) {
-
-    .contact-form-grup {
-        width:250px;
-        margin:auto;
-        padding:10px;
-        margin-bottom: 50px;
-    }
-    
-    .contact-form-grup form div{
-        margin-top:15px
-    }
-    
-    .contact-form-grup label{
-        font-weight: bold;
-        font-size:15px;
-    }
-    
-    .contact-form-grup input,
-    .contact-form-grup select,
-    .contact-form-button,
-    .contact-form-grup textarea{
-        background-color: #ffffff;
-        border-radius: 10px;
-        width: 100%;
-        border: 1px solid #ffffff;
-        resize: none;
-        cursor: pointer;
-        align-content: center;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .form-container form {
-        width: 80%;
-        text-align: center;
-        align-content: center;
-        justify-content: center;
-        margin:auto;
-        padding:auto;
-        font-size: 15px;
-    }
-
-    .input-blog-date{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    .input-blog-date-flex{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .form-container form div input,textarea{
-        margin:10px auto;
-    }
-
-    #barsmenu{
-        display:block;
-    }
-
-    .item-collapse{
-        display: none;
-    }
-
-    .nav-left .logo{
-        width: 20%;
-    }
-
-    .card{
-        width: 250px; 
-        margin: 35px auto;
-        box-shadow: 0 5px 10px 1px #cacaca;
-        padding: 35px;
-        background-color: white;
-        border-radius: 10px;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .left{
-        font-size: small;
-    }
-
-    .right div{
-        width: 100%;
-    }
-    
-    .right img {
-        width: 100%;
-    }
-
-
-    section{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .left h6 a img {
-        width: 10%;
-    }
-
 }

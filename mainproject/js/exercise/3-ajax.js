@@ -7,7 +7,7 @@ const promise = new Promise ((resolve,reject)=>{
     // parameter 2 : is the URL
     // parameter 3 : true or false, if tru mean that we using asynchronous web assembly, if false mean that we using synchronous way.
 
-    // console.log(xhr);
+    console.log(xhr);
 
     // xhr.onload = function(){}; // to load and check the status of the request
     // xhr.onerror = function(){}; // loaded when it is error when we requesting the data
@@ -30,7 +30,7 @@ const promise = new Promise ((resolve,reject)=>{
 });
 
 async function getAllTestimonials(){
-    const response=await promise; //apakah ketika ini ditunda untuk menunggu, yang dibawah tetap berjalan ?
+    const response=await promise;
     
     let testimonialHTML ="";
     response.forEach(function (item){
