@@ -24,15 +24,15 @@ let dataproject=[];
 function addblog(event){  
 event.preventDefault();
 
-let title = document.getElementById("inputTitle").value;
+let title = document.getElementById("input-blog-title").value;
 let startdate = document.getElementById("input-blog-date-start").value;
 let enddate = document.getElementById("input-blog-date-end").value;
-let content = document.getElementById("inputContent").value;
-let data1 = Number(document.getElementById("inputcheckbox_iot").checked);
-let data2 = Number(document.getElementById("inputcheckbox_ui").checked);
-let data3 = Number(document.getElementById("inputcheckbox_full").checked);
-let data4 = Number(document.getElementById("inputcheckbox_ml").checked);
-let image = document.getElementById("inputImage").files;
+let content = document.getElementById("input-blog-content").value;
+let data1 = Number(document.getElementById("iot").checked);
+let data2 = Number(document.getElementById("datascience").checked);
+let data3 = Number(document.getElementById("fullstack").checked);
+let data4 = Number(document.getElementById("contentcreator").checked);
+let image = document.getElementById("input-blog-image").files;
 let posttime=new Date();
 image=URL.createObjectURL(image[0]);
 start = new Date(startdate);
@@ -108,7 +108,9 @@ function renderBlog(){
                 <p>
                     ${dataproject[index].content}
                 </p>
-
+                <p>
+                ${conditioncheckbox(dataproject[index].datacheckbox)}
+                </p>
             </div>
 
         </div>`
@@ -182,6 +184,23 @@ function renderBlog(){
     
 // }
 
+function conditioncheckbox(data){
+    var name;
+    if (data[0]==1){
+        name = `<img src="assets/Gambar/iot.png" alt="foto logo" style="width:15%">`;
+    }
+    if (data[1]==1){
+        name = name+ `<img src="assets/Gambar/data-science.png" alt="foto logo" style="width:15%">`;
+    }
+    if (data[2]==1){
+       name = name+ `<img src="assets/Gambar/dev.png" alt="foto logo" style="width:15%">`;
+    }
+    if (data[3]==1){
+        name = name+`<img src="assets/Gambar/creative.png" alt="foto logo" style="width:15%">`;
+    }
+    return name;
+}
+
 function getTimeProject(start,end){
     start=new Date(start);
     end = new Date(end);
@@ -191,6 +210,10 @@ function getTimeProject(start,end){
     const second1hours=3600;
     const hours1days=24;
     const day1month=30;
+
+    let distanceyear = Math.floor(
+        durasi/(milisecond*second1hours*hours1days*day1month*12)
+    );
 
     let distancemonth = Math.floor(
         durasi/(milisecond*second1hours*hours1days*day1month)
@@ -208,12 +231,15 @@ function getTimeProject(start,end){
         durasi/milisecond
     );
 
+    if (distanceyear>0){
+        return `${distanceyear} Years`;
+    }
 
     if (distancemonth>0){
-        return `${distancemonth} Month`;
+        return `${distancemonth} Months`;
     }
     else if (distanceday>0){
-        return `${distanceday} Day`;
+        return `${distanceday} Days`;
     }
 
     else if (distancehours>0){
@@ -225,7 +251,7 @@ function getTimeProject(start,end){
     }
 
     else if (distanceseconds>0){
-        return `${distanceseconds} Second`;
+        return `${distanceseconds} Seconds`;
     }
  
  
