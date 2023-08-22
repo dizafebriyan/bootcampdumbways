@@ -164,8 +164,69 @@
   }
 
   .logo{
-    width: 2%;
+    width: 10%;
 }
+  
+  .profile-card {
+    background-color: #E8E9EB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+  }
+  
+  .profile-card img {
+    width: 70%;
+    height: 70%;
+    /* border-radius: 50%; */
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  
+  .profile-card h1 {
+    color: #333;
+    margin: 0;
+  }
+  
+  .profile-card p {
+    color: #777;
+    margin: 0;
+  }
+  
+  .contact {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+  
+  .backgorundshadow{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+  }
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  
+  .social-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
 
 
 
@@ -182,7 +243,10 @@
     /* Mengubah font pada layar kecil */
     @media (max-width: 576px) {
         .small-font {
-            font-size: 11px;
+            font-size: 30px;
+        }
+        .small-fontp{
+            font-size :15px;
         }
         .heightcondition{
             height: 400px;
