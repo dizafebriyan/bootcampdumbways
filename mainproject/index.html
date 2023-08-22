@@ -2,91 +2,205 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
-    <title>Welcome to Diza Febriyan Profile</title>
-    <nav>
-        <div class="nav-left">
-            <ul>
-                <li class="logo">
-                    <img src="assets/Gambar/logo.png" alt="foto logo" style="width:100%;"/>
-                </li>
-                <li class="item-collapse">
-                    <a class="active" href="index.html">Home</a>
-                </li>
-                <li class="item-collapse">
-                    <a href="myProject.html">Project</a>
-                </li>
-                <li class="item-collapse">
-                    <a href="testimonial.html">Testimonial</a>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-right item-collapse">
-            <a href="contact.html">Contact Me</a>
-        </div>
-        <div class="nav-right" id="barsmenu">
-            <button onclick="openHamburger()"  style="background-color:transparent; border:none; cursor: pointer;">
-                <i class="fa-2x fa-solid fa-bars"></i>
+    <title>Kursus Bahasa Inggris</title>
+    <link rel="icon" type="image/x-icon" href="assets/logoicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"/> <!-- Buat file CSS sendiri untuk desain kustom -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="assets/logo.png" width="70"/>
+            </a>
+            <!-- <a class="navbar-brand text-red fw-bold" href="#">Marvelous</a> -->
+            <button class="navbar-toggler bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#about">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#courses">Kursus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#testimonials">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="hamburger-nav-container" id="hamburger-nav-container">
-        <a href="index.html" class="hamburger-active">Home</a>
-        <a href="myProject.html">My Project</a>
-        <a href="contact.html">Contact</a>
-        <a href="testimonial.html">Testimonial</a>
-    </div>
+    <!-- Header -->
+    <header class="jumbotron jumbotron-fluid text-center text-white p-lg-5 p-0 pb-4 d-flex heightcondition flex-lg-row  flex-column-reverse textured-box">
+        <div class="blur-background rounded-5 h-100 container center-container sizepicture">
+          <img src="assets/homepicture2.jpg" class="img-fluid rounded-3 p-lg-5 p-0" style="max-width: 150%; max-height: 150%; height: auto; width: auto;" alt="Blurred Background Image">
+          <div class="content p-5 flex-column">
+            <h1 class="large-font box bg-red rounded-sm p-3">Welcome to Kampung Inggris</h1>
+            <p class="lead">Enhance your English skills with experienced instructors.</p>
+            <a href="#courses" class="btn btn-primary btn-lg">Explore Courses</a>
+          </div>
+        </div>
+        <div class="p-0 m-0 sizepicture">
+            <img src="assets/speak.png" class="" alt="5 Tahun berpengalaman di amerika">
+        </div>
+    </header>
 
-</head>
-
-<body >
-    <div class="card">
-        <section>
-            <div class="left">
-                <h1>Hi Welcome to My Profile</h1>
-                
-                <p style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas earum aliquam corrupti nihil. Tempora, labore. Eum cum alias sequi cupiditate impedit corporis fugit, veniam magni nostrum nesciunt officiis eligendi. Sit!</p>
-                
-                <div class="left-horizontal">
-                    <a href="contact.html">
-                        <button>Contact</button>
-                    </a>
-
-                
-                    <p style="flex:50%;cursor:default;">download CV
-                        <img style="width: 7%; align-items: center;" src="assets/Gambar/download.png" href="" alt="Gambar Diza Febriyan">
-                    </p>
+    <!-- Tentang Kami -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-row">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>We are a leading English course institution located...</p>
+                    <a href="#contact" class="btn btn-outline-light">Contact Us</a>
                 </div>
-
-                <h6>
-                    <a href="https://www.linkedin.com/in/diza-febriyan-hasal-1aa162143/"><img src="assets/Gambar/linkedin (1).png" alt="linkedin"></a>
-                    <a href="https://www.instagram.com/dizafebriyan/?hl=id"><img src="assets/Gambar/instagram (1).png" alt="instagram"></a>
-                    <a href="https://www.tiktok.com/@dizafebriyan"><img src="assets/Gambar/tiktok (1).png" alt="tiktok"></a>
-                    <a href="https://www.youtube.com/c/dizafebriyan"><img src="assets/Gambar/youtube (1).png" alt="youtube"></a>
-                    
-                </h6>
+                <div id="myCarousel" class="carousel slide carousel-fade col-md-6 bg-basic rounded-lg d-flex justify-content-center align-items-center" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+          
+                  <div class="carousel-inner p-2 p-sm-3 p-md-4 p-lg-5">
+                      <div class="carousel-item active">
+                          <img class="w-100 rounded-sm" src="assets/gambar1.jpg" alt="Image 1">
+                      </div>
+                      <div class="carousel-item">
+                          <img class="w-100 rounded-sm" src="assets/gambar2.jpg" alt="Image 2">
+                      </div>
+                      <div class="carousel-item">
+                          <img class="rounded-sm w-100 " src="assets/gambar3.jpg" alt="Image 3">
+                      </div>
+                  </div>
+          
+                  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                  </a>
+              </div>
             </div>
+        </div>
+    </section>
 
-            <div class="right">
-                    <center>        
-                        <img src="assets/Gambar/imagee.jpg" alt="Gambar Diza Febriyan;">
-                    </center>
-            
-            
-                    <div>
-                        <h2 style="text-align: center; margin-bottom: 2px;">Diza Febriyan</h2>
-                        <p style="text-align: center; margin-top: 0; ">Fullstack Developer</p>
+    <!-- Kursus -->
+    <section id="courses" class="py-5 bg-blue">
+        <div class="container">
+            <h2 class="text-center mb-4 text-white fw-bolder">Our Courses</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="assets/flyer.png" alt="Course 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Beginner Course</h5>
+                            <p class="card-text">Learn the basics of English with interactive methods.</p>
+                            <div class="justify-content-center align-content-center d-flex">
+                                <button id="basicclass" class="cool-button">Booking Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="assets/flyer.png" alt="Course 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Intermediate Course</h5>
+                            <p class="card-text">Improve your speaking and comprehension skills.</p>
+                            <div class="justify-content-center align-content-center d-flex">
+                                <button id="intermediateclass" class="cool-button">Booking Now</button>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="assets/flyer.png" alt="Course 3" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Business English</h5>
+                            <p class="card-text">Enhance your English for business and professional purposes.</p>
+                            <div class="justify-content-center align-content-center d-flex">
+                                <button id="businessclass" class="cool-button">Booking Now</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-        </section>
+    <!-- Testimoni -->
+    <section id="testimonials" class="py-5 text-red">
+        <div class="container">
+            <h2 class="text-center mb-4">Testimonials</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="card-text">The courses are very interactive and the instructors are experienced.</p>
+                            <h6 class="card-title">John Doe</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="card-text">I feel much more confident in speaking English now.</p>
+                            <h6 class="card-title">Jane Smith</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="card-text">Thanks to this institution for helping improve my skills.</p>
+                            <h6 class="card-title">Ahmad Abdullah</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Kontak -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="d-flex flex-row align-items-center justify-content-center gap-3 ">
+                <img src="assets/facebook.png" alt="facebook" class="logo">
+                <img src="assets/whatsapp.png" alt="whatsapp" class="logo">
+                <img src="assets/instagram.png" alt="instagram" class="logo">
+                <img src="assets/tiktok.png" alt="tiktok" class="logo">
+            </div>
+        </div>
+    </section>
 
-
-    </div>
-    <script src="https://kit.fontawesome.com/ecea77ed94.js" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 English Course. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
