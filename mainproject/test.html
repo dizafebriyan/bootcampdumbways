@@ -3,48 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Futuristic Gallery</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <style>
+    #map {
+      height: 400px;
+    }
+  </style>
+  <title>Clickable Map</title>
+  <!-- head contents -->
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <div class="gallery-container d-flex">
-    <div class="gallery-item">
-      <div class="overlay"></div>
-      <img src="assets/gambar1.jpg" alt="Image 1">
-      <h3>Image Title</h3>
+  <div class="card">
+    <div id="map" class="map-container"></div>
+    <div class="card-content">
+      <h2>Informasi Lokasi</h2>
+      <p>Deskripsi atau informasi lain tentang lokasi.</p>
     </div>
-    <div class="gallery-item">
-      <div class="overlay"></div>
-      <img src="assets/gambar2.jpg" alt="Image 2">
-      <h3>Image Title</h3>
-    </div>
-    <div class="gallery-item">
-      <div class="overlay"></div>
-      <img src="assets/gambar2.jpg" alt="Image 2">
-      <h3>Image Title</h3>
-    </div>
-    <div class="gallery-item">
-      <div class="overlay"></div>
-      <img src="assets/gambar2.jpg" alt="Image 2">
-      <h3>Image Title</h3>
-    </div>
-    <div class="gallery-item">
-      <div class="overlay"></div>
-      <img src="assets/gambar2.jpg" alt="Image 2">
-      <h3>Image Title</h3>
-    </div>
-    <div class="gallery-item">
-      <div class="overlay"></div>
-      <img src="assets/gambar2.jpg" alt="Image 2">
-      <h3>Image Title</h3>
-    </div>
-    <div class="gallery-item">
-      <div class="overlay"></div>
-      <img src="assets/gambar2.jpg" alt="Image 2">
-      <h3>Image Title</h3>
-    </div>
-
-    <!-- Add more gallery items -->
   </div>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
