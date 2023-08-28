@@ -2,8 +2,16 @@
 .card{
   width: auto;
   height: auto;
-  max-width: 450px;
+  max-width: 370px;
+  max-height: auto;
   justify-content: center;
+}
+
+.card2{
+  width: auto;
+  height: auto;
+  max-width: 370px;
+  max-height: auto;
 }
 
 .slider div{

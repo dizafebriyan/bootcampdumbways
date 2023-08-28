@@ -1,0 +1,26 @@
+/* styles.css */
+
+.scroll-btn {
+    display: top;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 221, 0, 0.7);
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+     z-index: 999;
+  }
+  
+  .scroll-btn.show {
+    display: block;
+    opacity: 1;
+     z-index: 1000;
+  }
+  
