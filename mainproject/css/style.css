@@ -333,6 +333,22 @@
     box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
 }
 
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    color: #777;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: small;
+}
+.card-body div button{
+    padding:10px;
+    margin:0px;
+    width: 100%;
+}
 
 
 
