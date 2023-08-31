@@ -1,12 +1,12 @@
 document.getElementById("intermediateclass").addEventListener("click", function() {
-    var whatsappURL = "https://wa.me/6281234442872/?text=Excuse me Sir, can i know and register to program marvelous in the Executive Class Level 1 ?";
+    var whatsappURL = "https://wa.me/6281234442872/?text=Excuse me Sir, can i know and register to program marvelous in the Executive Class Level 2 ?";
     
     window.open(whatsappURL, "_blank");
 });
 
 
 document.getElementById("basicclass").addEventListener("click", function() {
-    var whatsappURL = "https://wa.me/6281234442872/?text=Excuse me Sir, can i know and register to program MARVELOUS in the Executive Class Level 2 ?";
+    var whatsappURL = "https://wa.me/6281234442872/?text=Excuse me Sir, can i know and register to program MARVELOUS in the Executive Class Level 1 ?";
     
     window.open(whatsappURL, "_blank");
 });
