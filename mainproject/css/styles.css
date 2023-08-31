@@ -29,6 +29,15 @@
   cursor: grab;
 }
 
+/* styles.css */
+.zoomable {
+  /* cursor: pointer; */
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoomable:hover {
+  transform: scale(1.2); /* Atur sesuai kebutuhan untuk efek perbesaran */
+}
 
 
     * {
